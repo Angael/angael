@@ -1,45 +1,34 @@
 {
-  "name": "live-reload-vanilla-website-template",
-  "version": "1.0.0",
-  "description": "Template to build a website without a front-end framework. Includes transpilation of ES6+ JavaScript and Sass support",
-  "main": "main.js",
-  "author": "Esau Silva",
-  "license": "MIT",
+  "name": "react-static-example-basic",
+  "private": true,
   "scripts": {
-    "dev:assets": "webpack --watch",
-    "dev:start": "live-server --open=/ --host=localhost --watch=./public/ --mount=/:./public/",
-    "dev": "npm-run-all -p dev:*",
-    "build": "cross-env NODE_ENV=production webpack"
+    "start": "react-static start",
+    "stage": "react-static build --staging",
+    "build": "react-static build",
+    "analyze": "react-static build --analyze",
+    "serve": "serve dist -p 3000"
+  },
+  "dependencies": {
+    "@reach/router": "^1.3.4",
+    "axios": "^0.21.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-hot-loader": "^4.13.0",
+    "react-static": "^7.5.1",
+    "react-static-plugin-reach-router": "^7.5.1",
+    "react-static-plugin-sitemap": "^7.5.1",
+    "react-static-plugin-source-filesystem": "^7.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "babel-loader": "^8.2.2",
-    "cross-env": "^7.0.3",
-    "css-loader": "^5.0.1",
-    "file-loader": "^6.2.0",
-    "live-server": "^1.2.1",
-    "mini-css-extract-plugin": "^1.3.3",
-    "node-sass": "^5.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-loader": "^4.1.0",
-    "postcss-preset-env": "^6.7.0",
-    "sass-loader": "^10.1.0",
-    "webpack": "^5.11.1",
-    "webpack-cli": "^4.3.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/esausilva/live-reload-vanilla-website-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/esausilva/live-reload-vanilla-website-template/issues"
-  },
-  "keywords": [
-    "JavaScript",
-    "Webpack",
-    "ES6+",
-    "live reload",
-    "Sass"
-  ]
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-react-tools": "^1.1.7",
+    "eslint-plugin-flowtype": "^5.2.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "serve": "^11.3.2"
+  }
 }

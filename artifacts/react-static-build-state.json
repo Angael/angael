@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\src\\pages"
+      }
+    ],
+    "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael"
+  ],
+  "paths": {
+    "ROOT": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael",
+    "SRC": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\src",
+    "DIST": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist",
+    "ASSETS": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist",
+    "PLUGINS": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\plugins",
+    "TEMP": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\tmp",
+    "ARTIFACTS": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\artifacts",
+    "PUBLIC": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\public",
+    "NODE_MODULES": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules",
+    "PACKAGE": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist\\staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
