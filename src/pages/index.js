@@ -1,6 +1,6 @@
 import React from "react";
 import { Head } from "react-static";
-import TitleCard from "./TitleCard";
+import TitleCard from "components/index/TitleCard";
 
 const Index = () => (
   <>
@@ -18,7 +18,6 @@ const Index = () => (
       <title>Krzysztof Widacki</title>
     </Head>
     <TitleCard />
-    <div style={{ textAlign: "center" }}></div>
   </>
 );
 

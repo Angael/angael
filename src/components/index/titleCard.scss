@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url("/bold.ttf");
+}
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url("/regular.ttf");
+}
+@font-face {
+  font-family: 'Poppins-thin';
+  src: url("/thin.ttf");
+}
+
+.stack{
+  width:100vw;
+  height: 100vh;
+
+  &.colorful{
+    background: violet;
+  }
+
+  h1{
+    font-size: 4rem;
+    font-family: 'Poppins-bold', "Arial Black", sans-serif;
+  }
+  h4{
+    font-size: 2rem;
+    font-family: 'Poppins-regular', "Arial", sans-serif;
+  }
+}
