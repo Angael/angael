@@ -1,0 +1,19 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  .skill {
+    margin: 3rem;
+    max-width: 10rem;
+    h1 {
+      font-size: 4rem;
+      font-family: 'Poppins-bold', 'Arial Black', sans-serif;
+      color: white;
+    }
+    h4 {
+      color: white;
+      font-size: 2rem;
+      font-family: 'Poppins-regular', 'Arial', sans-serif;
+    }
+  }
+}

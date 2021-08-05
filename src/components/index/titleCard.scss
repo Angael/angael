@@ -23,8 +23,20 @@
   }
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .title-card {
-  transition: 2s;
+  //transition: 2s;
   width: 100vw;
   max-height: 100vh;
   //background: linear-gradient(
@@ -35,12 +47,17 @@
   //);
   background: linear-gradient(
     to left top,
-    rgba(139, 167, 199, 1),
-    rgba(147, 151, 205, 1),
-    rgba(162, 144, 204, 1)
+    rgba(72, 208, 221, 1),
+    rgba(80, 170, 223, 1),
+    rgba(93, 112, 228, 1),
+    rgba(131, 89, 227, 1),
+    rgba(182, 79, 226, 1),
+    rgba(230, 73, 200, 1)
   );
 
-  animation: gradient-anim 10s infinite;
+  //background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 12s infinite;
 
   header {
     padding: 10rem 0;
