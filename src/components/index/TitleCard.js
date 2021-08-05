@@ -3,7 +3,7 @@ import 'components/index/titleCard.scss';
 
 function TitleCard(props) {
   return (
-    <section className='stack colorful'>
+    <section className='title-card'>
       <div className='container'>
         <header>
           <h1>Krzysztof Widacki</h1>
