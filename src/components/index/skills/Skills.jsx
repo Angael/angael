@@ -21,19 +21,24 @@ function Skills(props) {
   };
 
   return (
-    <motion.div className='skills container'>
-      {skillArr.map((skill, i) => {
-        return (
-          <Skill
-            isSelected={i === selectedIndex}
-            key={skill}
-            {...skill}
-            index={i}
-            onSelect={() => onSelect(i)}
-          />
-        );
-      })}
-    </motion.div>
+    <section className={'container'}>
+      <header className={'section-header'}>
+        <h1>I work with</h1>
+      </header>
+      <motion.div className='skills'>
+        {skillArr.map((skill, i) => {
+          return (
+            <Skill
+              isSelected={i === selectedIndex}
+              key={skill}
+              {...skill}
+              index={i}
+              onSelect={() => onSelect(i)}
+            />
+          );
+        })}
+      </motion.div>
+    </section>
   );
 }
 

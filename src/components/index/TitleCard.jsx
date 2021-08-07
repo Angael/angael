@@ -1,7 +1,7 @@
 import React from 'react';
 import 'components/index/titleCard.scss';
 
-function TitleCard(props) {
+function TitleCard() {
   return (
     <section className='title-card'>
       <div className='container'>

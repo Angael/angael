@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="basic animation">
-      <change afterPath="$PROJECT_DIR$/src/components/index/skills/SkillArr.js" afterDir="false" />
+    <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="some animation, but is it worth it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index/skills/skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/skills.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/react-static-templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/react-static-templates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/static-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/static-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/TitleCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/TitleCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skills.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
       <workItem from="1628106148692" duration="7467000" />
       <workItem from="1628189263115" duration="9928000" />
       <workItem from="1628260246470" duration="4533000" />
-      <workItem from="1628354306485" duration="5975000" />
+      <workItem from="1628354306485" duration="7266000" />
     </task>
     <task id="LOCAL-00001" summary="Static routing">
       <created>1628107870339</created>
@@ -115,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628195993505</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some animation, but is it worth it">
+      <created>1628361541806</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628361541806</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +149,8 @@
     <MESSAGE value="Prettier and basic config" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="basic animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic animation" />
+    <MESSAGE value="some animation, but is it worth it" />
+    <option name="LAST_COMMIT_MESSAGE" value="some animation, but is it worth it" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
