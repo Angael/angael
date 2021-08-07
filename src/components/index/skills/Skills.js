@@ -1,59 +1,39 @@
-import React from 'react';
-import { AnimateSharedLayout, motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Skill from 'components/index/skills/Skill';
+import { skillArr } from 'components/index/skills/SkillArr';
 
 import './skills.scss';
 
-const skillArr = [
-  {
-    icon: 'ikona',
-    name: 'react',
-    desc: 'My favourite tool for writing frontend',
-    longDesc: [
-      'I work with react since 2019, and in this time It has completely changed how I view frontend.',
-      `Even this site is built with SSR react`,
-    ],
-    proficiency: {
-      num: 100,
-      word: 'Professional',
-    },
-  },
-  {
-    icon: 'ikona',
-    name: 'Webpack',
-    desc: 'My bundler of choice',
-    longDesc: [
-      'I work with react since 2019, and in this time It has completely changed how I view frontend.',
-      `Even this site is built with SSR react`,
-    ],
-    proficiency: {
-      num: 50,
-      word: 'I mean it is webpack',
-    },
-  },
-  {
-    icon: 'ikona',
-    name: 'AWS',
-    desc: 'Stuff i know about it',
-    longDesc: [
-      'I work with react since 2019, and in this time It has completely changed how I view frontend.',
-      `Even this site is built with SSR react`,
-    ],
-    proficiency: {
-      num: 100,
-      word: 'Professional',
-    },
-  },
-];
-
 function Skills(props) {
+  const [selectedIndex, setSelectedIndex] = useState(null);
   //Tutaj uzyj animate shared layout bo tam jest taki super myk ze layout id podajesz i moga elementy plynnie przeplywac w inne miejsce i jest super
+
+  const selectedItem = skillArr[selectedIndex];
+  console.log(selectedIndex);
+
+  const onSelect = (i) => {
+    if (i === selectedIndex) {
+      setSelectedIndex(null);
+    } else {
+      setSelectedIndex(i);
+    }
+  };
+
   return (
-    <div className='skills container'>
-      {skillArr.map((skill) => {
-        return <Skill key={skill} {...skill} />;
+    <motion.div className='skills container'>
+      {skillArr.map((skill, i) => {
+        return (
+          <Skill
+            isSelected={i === selectedIndex}
+            key={skill}
+            {...skill}
+            index={i}
+            onSelect={() => onSelect(i)}
+          />
+        );
       })}
-    </div>
+    </motion.div>
   );
 }
 

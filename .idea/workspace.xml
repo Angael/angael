@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="basic animation">
-      <change afterPath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index/skills/Skills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index/skills/skills.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index/skills/SkillArr.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index/titleCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/titleCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/skills.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,9 @@
       <recent name="S:\Node projects\angael\src\components\index" />
       <recent name="S:\Node projects\angael\src\components" />
     </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="S:\Node projects\angael\src\components\index\skills\SkillArr.js" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,6 +77,8 @@
       <updated>1628106141687</updated>
       <workItem from="1628106148692" duration="7467000" />
       <workItem from="1628189263115" duration="9928000" />
+      <workItem from="1628260246470" duration="4533000" />
+      <workItem from="1628354306485" duration="5975000" />
     </task>
     <task id="LOCAL-00001" summary="Static routing">
       <created>1628107870339</created>
