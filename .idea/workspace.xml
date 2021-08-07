@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="some animation, but is it worth it">
+    <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="jsx">
+      <change afterPath="$PROJECT_DIR$/src/components/index/skills/modal/Modal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index/skills/modal/modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/react-static-templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/react-static-templates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/static-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/static-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index/TitleCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/TitleCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skills.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skills.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/skills.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -82,7 +80,7 @@
       <workItem from="1628106148692" duration="7467000" />
       <workItem from="1628189263115" duration="9928000" />
       <workItem from="1628260246470" duration="4533000" />
-      <workItem from="1628354306485" duration="7266000" />
+      <workItem from="1628354306485" duration="13426000" />
     </task>
     <task id="LOCAL-00001" summary="Static routing">
       <created>1628107870339</created>
@@ -126,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628361541806</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jsx">
+      <created>1628362758735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628362758735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +155,8 @@
     <MESSAGE value="gitignore" />
     <MESSAGE value="basic animation" />
     <MESSAGE value="some animation, but is it worth it" />
-    <option name="LAST_COMMIT_MESSAGE" value="some animation, but is it worth it" />
+    <MESSAGE value="jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="jsx" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

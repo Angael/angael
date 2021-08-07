@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import Skill from 'components/index/skills/Skill';
 import { skillArr } from 'components/index/skills/SkillArr';
 
 import './skills.scss';
+import Modal from 'components/index/skills/modal/Modal';
 
 function Skills(props) {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -21,24 +22,31 @@ function Skills(props) {
   };
 
   return (
-    <section className={'container'}>
-      <header className={'section-header'}>
-        <h1>I work with</h1>
-      </header>
-      <motion.div className='skills'>
-        {skillArr.map((skill, i) => {
-          return (
-            <Skill
-              isSelected={i === selectedIndex}
-              key={skill}
-              {...skill}
-              index={i}
-              onSelect={() => onSelect(i)}
-            />
-          );
-        })}
-      </motion.div>
-    </section>
+    <AnimateSharedLayout type='crossfadez'>
+      <section className={'container'}>
+        <header className={'section-header'}>
+          <h1>I work with</h1>
+        </header>
+        <motion.div className='skills'>
+          {skillArr.map((skill, i) => {
+            return (
+              <Skill
+                isSelected={i === selectedIndex}
+                key={skill}
+                {...skill}
+                index={i}
+                onSelect={() => onSelect(i)}
+              />
+            );
+          })}
+        </motion.div>
+        <AnimatePresence>
+          {selectedItem && (
+            <Modal {...selectedItem} onSelect={() => setSelectedIndex(null)} />
+          )}
+        </AnimatePresence>
+      </section>
+    </AnimateSharedLayout>
   );
 }
 
