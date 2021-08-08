@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="Animation next">
+      <change afterPath="$PROJECT_DIR$/src/consts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_reset..scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/_reset..scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skill.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/SkillArr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/SkillArr.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index/skills/modal/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/modal/Modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index/skills/modal/modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/modal/modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index/skills/skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/skills.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -66,6 +69,16 @@
       <recent name="S:\Node projects\angael\src\components\index\skills\SkillArr.js" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,6 +91,7 @@
       <workItem from="1628189263115" duration="9928000" />
       <workItem from="1628260246470" duration="4533000" />
       <workItem from="1628354306485" duration="19561000" />
+      <workItem from="1628405180836" duration="12023000" />
     </task>
     <task id="LOCAL-00001" summary="Static routing">
       <created>1628107870339</created>

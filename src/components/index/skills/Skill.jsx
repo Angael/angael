@@ -12,13 +12,14 @@ function Skill(props, ref) {
     : 'rgba(0, 0, 0, 0)';
 
   return (
-    <div className={'skill-btn-container'}>
+    <button className={'skill-btn-container'} onClick={onSelect}>
       <div className='skill-container'>
         <motion.article
           className={`skill-content`}
-          onClick={onSelect}
           ref={ref}
           layoutId={`skill-container-${name}`}
+          role='button'
+          tabindex='1'
         >
           <motion.div
             className='icon-container'
@@ -33,6 +34,17 @@ function Skill(props, ref) {
           <motion.p layoutId={`skill-name-${name}`} className='name'>
             {name}
           </motion.p>
+          <motion.div
+            layoutId={`skill-proficiency-container-${name}`}
+            className={`skill-proficiency-container`}
+          >
+            <motion.p
+              layoutId={`skill-proficiency-${name}`}
+              className={`skill-proficiency ${proficiency.word}`}
+            >
+              {proficiency.word}
+            </motion.p>
+          </motion.div>
           {/*{isSelected && (*/}
           {/*  <>*/}
           {/*    <motion.p>{desc}</motion.p>*/}
@@ -42,7 +54,7 @@ function Skill(props, ref) {
           {/*)}*/}
         </motion.article>
       </div>
-    </div>
+    </button>
   );
 }
 

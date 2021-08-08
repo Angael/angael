@@ -46,11 +46,25 @@ function Modal(props) {
             animate={{ opacity: 1, y: 0 }}
             className={'skill-details'}
           >
-            <p>{desc}</p>
-            <p>{longDesc}</p>
-            <h4>Proficiency:</h4>
-            <p>{proficiency.word}</p>
+            {/*<p>{desc}</p>*/}
+            {longDesc.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
           </motion.div>
+        </motion.article>
+        <motion.article
+          layoutId={`skill-proficiency-container-${name}`}
+          className={'skill-proficiency-container'}
+          // transition={{ duration: 2 }}
+        >
+          <h4>I am</h4>
+          <motion.p
+            layoutId={`skill-proficiency-${name}`}
+            className={`skill-proficiency ${proficiency.word}`}
+          >
+            {proficiency.word}
+          </motion.p>
+          <h4> using {name}</h4>
         </motion.article>
       </div>
     </>
