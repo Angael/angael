@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="New skills">
+    <list default="true" id="07f94478-deaa-4ed7-aeb8-10b24a7ac773" name="Default Changelist" comment="New skills dimages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index/skills/SkillArr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/SkillArr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index/skills/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index/skills/Skills.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/consts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
       <workItem from="1628189263115" duration="9928000" />
       <workItem from="1628260246470" duration="4533000" />
       <workItem from="1628354306485" duration="19561000" />
-      <workItem from="1628405180836" duration="14677000" />
+      <workItem from="1628405180836" duration="20499000" />
     </task>
     <task id="LOCAL-00001" summary="Static routing">
       <created>1628107870339</created>
@@ -165,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628434267713</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="New skills dimages">
+      <created>1628444974921</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1628444974921</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +203,8 @@
     <MESSAGE value="Satysfying animation" />
     <MESSAGE value="Animation next" />
     <MESSAGE value="New skills" />
-    <option name="LAST_COMMIT_MESSAGE" value="New skills" />
+    <MESSAGE value="New skills dimages" />
+    <option name="LAST_COMMIT_MESSAGE" value="New skills dimages" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
