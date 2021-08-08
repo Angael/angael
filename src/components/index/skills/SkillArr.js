@@ -67,7 +67,10 @@ export const skillArr = [
   {
     icon: '/img/node.png',
     name: 'Node js',
-    longDesc: ['The must have for every developer', `Writing `],
+    longDesc: [
+      'The must have for every developer',
+      `Writing simple CLI programs, or backend in Node.js is a pretty simple task and I prefer`,
+    ],
     proficiency: {
       word: PROFICIENCY.proficent,
     },
@@ -93,7 +96,7 @@ export const skillArr = [
     },
   },
   {
-    icon: '/img/framermotion.png',
+    icon: '/img/framermotion.webp',
     name: 'Framer Motion',
     longDesc: [
       'This site uses Framer Motion for this very dialog.',
@@ -129,7 +132,7 @@ export const skillArr = [
   },
   {
     icon: '/img/vsc.png',
-    name: 'VisualStudio Code',
+    name: 'Visual Studio Code',
     longDesc: [
       `My second favourite IDE for writing almost everything else.`,
       `Lately I stopped using VSC for projects, because it's not as smart and optimized for working on my particular tech stack as Webstorm`,
