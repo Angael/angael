@@ -15,30 +15,31 @@
   "silent": false,
   "entry": "index.js",
   "plugins": [
+    "react-static-plugin-sass",
     [
-      "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      "S:\\Node projects\\angael\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
       {
-        "location": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\src\\pages"
+        "location": "S:\\Node projects\\angael\\src\\pages"
       }
     ],
-    "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
-    "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
-    "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael"
+    "S:\\Node projects\\angael\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "S:\\Node projects\\angael\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "S:\\Node projects\\angael"
   ],
   "paths": {
-    "ROOT": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael",
-    "SRC": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\src",
-    "DIST": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist",
-    "ASSETS": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist",
-    "PLUGINS": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\plugins",
-    "TEMP": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\tmp",
-    "ARTIFACTS": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\artifacts",
-    "PUBLIC": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\public",
-    "NODE_MODULES": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules",
-    "EXCLUDE_MODULES": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\node_modules",
-    "PACKAGE": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\package.json",
-    "HTML_TEMPLATE": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist\\index.html",
-    "STATIC_DATA": "C:\\Users\\krzys\\Projekty\\angael\\angael\\angael\\dist\\staticData"
+    "ROOT": "S:\\Node projects\\angael",
+    "SRC": "S:\\Node projects\\angael\\src",
+    "DIST": "S:\\Node projects\\angael\\dist",
+    "ASSETS": "S:\\Node projects\\angael\\dist",
+    "PLUGINS": "S:\\Node projects\\angael\\plugins",
+    "TEMP": "S:\\Node projects\\angael\\tmp",
+    "ARTIFACTS": "S:\\Node projects\\angael\\artifacts",
+    "PUBLIC": "S:\\Node projects\\angael\\public",
+    "NODE_MODULES": "S:\\Node projects\\angael\\node_modules",
+    "EXCLUDE_MODULES": "S:\\Node projects\\angael\\node_modules",
+    "PACKAGE": "S:\\Node projects\\angael\\package.json",
+    "HTML_TEMPLATE": "S:\\Node projects\\angael\\dist\\index.html",
+    "STATIC_DATA": "S:\\Node projects\\angael\\dist\\staticData"
   },
   "siteRoot": "/",
   "basePath": "",

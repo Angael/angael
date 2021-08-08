@@ -1,5 +1,18 @@
 @import '_reset..scss';
 
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url('/bold.ttf');
+}
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url('/regular.ttf');
+}
+//@font-face {
+//  font-family: 'Poppins-thin';
+//  src: url('/thin.ttf');
+//}
+
 * {
   scroll-behavior: smooth;
 }
