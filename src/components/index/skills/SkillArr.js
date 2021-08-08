@@ -5,11 +5,24 @@ export const skillArr = [
     desc: 'My favourite tool for writing frontend',
     longDesc: [
       'I work with react since 2019, and in this time It has completely changed how I view frontend.',
-      `Even this site is built with SSR react`,
+      `This site is built with SSR react`,
     ],
     proficiency: {
       num: 100,
       word: 'Professional',
+    },
+  },
+  {
+    icon: '/img/redux.png',
+    name: 'Redux',
+    desc: 'I ',
+    longDesc: [
+      'I work with react since 2019, and in this time It has completely changed how I view frontend.',
+      `This site is built with SSR react`,
+    ],
+    proficiency: {
+      num: 80,
+      word: 'I work with it daily',
     },
   },
   {
@@ -22,7 +35,7 @@ export const skillArr = [
     ],
     proficiency: {
       num: 50,
-      word: 'I mean it is webpack',
+      word: "I can change existing config, that's where my comfort zone ends",
     },
   },
   {

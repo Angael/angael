@@ -21,28 +21,38 @@ function Modal(props) {
         className='overlay'
         onClick={onClose}
       />
+
       <div className='skill-container selected'>
         <motion.article
           layoutId={`skill-container-${name}`}
           className={'skill-content'}
-          transition={{ duration: 2 }}
+          // transition={{ duration: 2 }}
         >
           <motion.p
             layoutId={`skill-name-${name}`}
-            transition={{ duration: 2 }}
+            // transition={{ duration: 2 }}
             className='name'
           >
             {name}
           </motion.p>
-          <motion.img
-            layoutId={`skill-icon-${name}`}
-            transition={{ duration: 2 }}
-            src={icon}
-            className='icon'
-          />{' '}
-          <motion.p>{desc}</motion.p>
-          <motion.p>{longDesc}</motion.p>
-          <motion.p>Proficiency: {proficiency.word}</motion.p>
+          <motion.div className='icon-container'>
+            <motion.img
+              // transition={{ duration: 2 }}
+              layoutId={`skill-icon-${name}`}
+              src={icon}
+              className='icon'
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={'skill-details'}
+          >
+            <p>{desc}</p>
+            <p>{longDesc}</p>
+            <h4>Proficiency:</h4>
+            <p>{proficiency.word}</p>
+          </motion.div>
         </motion.article>
       </div>
     </>

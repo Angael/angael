@@ -7,7 +7,7 @@ import './skills.scss';
 import Modal from 'components/index/skills/modal/Modal';
 
 function Skills(props) {
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   //Tutaj uzyj animate shared layout bo tam jest taki super myk ze layout id podajesz i moga elementy plynnie przeplywac w inne miejsce i jest super
 
   const selectedItem = skillArr[selectedIndex];
@@ -22,7 +22,7 @@ function Skills(props) {
   };
 
   return (
-    <AnimateSharedLayout type='crossfadez'>
+    <AnimateSharedLayout type='crossfade'>
       <section className={'container'}>
         <header className={'section-header'}>
           <h1>I work with</h1>

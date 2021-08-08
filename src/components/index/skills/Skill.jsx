@@ -12,7 +12,7 @@ function Skill(props, ref) {
     : 'rgba(0, 0, 0, 0)';
 
   return (
-    <div>
+    <div className={'skill-btn-container'}>
       <div className='skill-container'>
         <motion.article
           className={`skill-content`}
@@ -20,11 +20,16 @@ function Skill(props, ref) {
           ref={ref}
           layoutId={`skill-container-${name}`}
         >
-          <motion.img
-            layoutId={`skill-icon-${name}`}
-            src={icon}
-            className='icon'
-          />{' '}
+          <motion.div
+            className='icon-container'
+            // transition={{ duration: 2 }}
+          >
+            <motion.img
+              layoutId={`skill-icon-${name}`}
+              src={icon}
+              className='icon'
+            />
+          </motion.div>
           <motion.p layoutId={`skill-name-${name}`} className='name'>
             {name}
           </motion.p>
