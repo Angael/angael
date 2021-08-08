@@ -23,6 +23,12 @@ function Modal(props) {
       />
 
       <div className='skill-container selected'>
+        <motion.img
+          // transition={{ duration: 2 }}
+          layoutId={`skill-icon-${name}`}
+          src={icon}
+          className='icon'
+        />
         <motion.article
           layoutId={`skill-container-${name}`}
           className={'skill-content'}
@@ -35,14 +41,6 @@ function Modal(props) {
           >
             {name}
           </motion.p>
-          <motion.div className='icon-container'>
-            <motion.img
-              // transition={{ duration: 2 }}
-              layoutId={`skill-icon-${name}`}
-              src={icon}
-              className='icon'
-            />
-          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
