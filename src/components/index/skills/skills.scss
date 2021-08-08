@@ -27,7 +27,7 @@
 
   &.selected {
     position: fixed;
-    top: 0;
+    top: 150px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -35,10 +35,14 @@
     padding: 40px 0;
 
     .icon {
-      margin: 0 auto 1rem;
+      margin: -150px auto 1rem;
       display: block;
-      height: 12rem;
+      height: 200px;
+      width: auto;
       z-index: 3;
+
+      //border-radius: 1rem;
+      //background: rgba(255, 255, 255, 1);
     }
   }
 }
