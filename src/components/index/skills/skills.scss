@@ -1,3 +1,5 @@
+@import 'variables';
+
 $itemWidth: 155px;
 
 .skills {
@@ -100,7 +102,8 @@ $itemWidth: 155px;
   .icon-container {
     position: relative;
     width: 100%;
-    height: 6rem;
+    height: 5rem;
+    margin-top: 1rem;
 
     .icon {
       display: block;
@@ -132,15 +135,6 @@ $itemWidth: 155px;
     }
   }
 }
-
-$bad: rgba(222, 22, 22, 1);
-//$bad: rgba(255, 0, 0, 1);
-$orange: rgba(222, 155, 22, 1);
-//$orange: rgba(174, 124, 57, 1);
-$yellow: rgba(216, 221, 22, 1);
-//$yellow: rgba(174, 174, 57, 1);
-$proficient: rgba(100, 197, 19, 1);
-//$proficient: rgba(51, 141, 46, 1);
 
 .skill-proficiency {
   display: inline-block;

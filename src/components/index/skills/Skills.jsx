@@ -5,11 +5,26 @@ import { skillArr } from 'components/index/skills/SkillArr';
 
 import './skills.scss';
 import Modal from 'components/index/skills/modal/Modal';
+import Sorting from 'components/index/skills/sorting/Sorting';
+import { FILTER } from 'consts';
+import getFilteredSkills from 'components/index/skills/helpers/getFilteredSkills';
+
+const getSortedList = (list, isReversed = false) => {
+  const newList = [...list].sort((a, b) => {
+    return b.proficiency.val - a.proficiency.val;
+  });
+  if (isReversed) {
+    newList.reverse();
+  }
+  return newList;
+};
 
 function Skills(props) {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [isReversed, setIsReversed] = useState(false);
-  //Tutaj uzyj animate shared layout bo tam jest taki super myk ze layout id podajesz i moga elementy plynnie przeplywac w inne miejsce i jest super
+
+  const [filter, setFilter] = useState(FILTER.all);
+  const [prof, setProf] = useState(1);
 
   const onSelect = (i) => {
     if (i === selectedIndex) {
@@ -22,14 +37,10 @@ function Skills(props) {
   const onReverse = () => setIsReversed((v) => !v);
 
   const sortedSkills = useMemo(() => {
-    const newList = [...skillArr].sort((a, b) => {
-      return b.proficiency.val - a.proficiency.val;
-    });
-    if (isReversed) {
-      newList.reverse();
-    }
-    return newList;
-  }, [isReversed]);
+    const sorted = getSortedList(skillArr, isReversed);
+    const filtered = getFilteredSkills(sorted, filter, prof);
+    return filtered;
+  }, [prof, filter, isReversed]);
 
   const selectedItem = sortedSkills[selectedIndex];
 
@@ -38,7 +49,14 @@ function Skills(props) {
       <section className={'container'}>
         <header className={'section-header'}>
           <h1>I work with</h1>
-          <button onClick={onReverse}>Reverse this list</button>
+          {/*<button onClick={onReverse}>Reverse this list</button>*/}
+
+          <Sorting
+            filter={filter}
+            setFilter={setFilter}
+            prof={prof}
+            setProf={setProf}
+          />
         </header>
         <motion.div className='skills'>
           {sortedSkills.map((skill, i) => {

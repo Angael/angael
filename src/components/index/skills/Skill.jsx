@@ -2,25 +2,23 @@ import React, { forwardRef } from 'react';
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 
 function Skill(props, ref) {
-  const {
-    /*isSelected,*/ icon,
-    name,
-    longDesc,
-    proficiency,
-    onSelect,
-    iconStyle,
-  } = props;
+  const { isSelected, icon, name, longDesc, proficiency, onSelect, iconStyle } =
+    props;
 
-  const isSelected = false;
-
-  const backgroundColor = isSelected
-    ? 'rgba(0, 0, 0, 0.05)'
-    : 'rgba(0, 0, 0, 0)';
+  // This fixes bug. where crossfade didnt dissapear logos
+  const motionProps = !isSelected
+    ? {
+        initial: { opacity: 0 },
+        animate: { opacity: 1 },
+        exit: { opacity: 0 },
+      }
+    : {};
 
   return (
     <button className={'skill-btn-container'} onClick={onSelect}>
       <div className='skill-container'>
         <motion.article
+          {...motionProps}
           className={`skill-content`}
           ref={ref}
           layoutId={`skill-container-${name}`}
