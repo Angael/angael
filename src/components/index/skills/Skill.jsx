@@ -2,8 +2,14 @@ import React, { forwardRef } from 'react';
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 
 function Skill(props, ref) {
-  const { /*isSelected,*/ icon, name, desc, longDesc, proficiency, onSelect } =
-    props;
+  const {
+    /*isSelected,*/ icon,
+    name,
+    longDesc,
+    proficiency,
+    onSelect,
+    iconStyle,
+  } = props;
 
   const isSelected = false;
 
@@ -29,6 +35,7 @@ function Skill(props, ref) {
               layoutId={`skill-icon-${name}`}
               src={icon}
               className='icon'
+              style={iconStyle || {}}
             />
           </motion.div>
           <motion.p layoutId={`skill-name-${name}`} className='name'>

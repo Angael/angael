@@ -4,11 +4,10 @@ import { motion } from 'framer-motion';
 import './modal.scss';
 
 function Modal(props) {
-  const { isSelected, icon, name, desc, longDesc, proficiency, onSelect } =
+  const { isSelected, icon, name, longDesc, proficiency, onSelect, iconStyle } =
     props;
 
   const onClose = () => {
-    console.log('close modal');
     onSelect();
   };
 
@@ -26,19 +25,14 @@ function Modal(props) {
         <motion.article
           layoutId={`skill-container-${name}`}
           className={'skill-content'}
-          // transition={{ duration: 2 }}
         >
           <motion.img
-            // transition={{ duration: 2 }}
             layoutId={`skill-icon-${name}`}
             src={icon}
             className='icon'
+            style={iconStyle || {}}
           />
-          <motion.p
-            layoutId={`skill-name-${name}`}
-            // transition={{ duration: 2 }}
-            className='name'
-          >
+          <motion.p layoutId={`skill-name-${name}`} className='name'>
             {name}
           </motion.p>
           <motion.div
@@ -46,7 +40,6 @@ function Modal(props) {
             animate={{ opacity: 1, y: 0 }}
             className={'skill-details'}
           >
-            {/*<p>{desc}</p>*/}
             {longDesc.map((line) => (
               <p key={line}>{line}</p>
             ))}
@@ -55,7 +48,6 @@ function Modal(props) {
         <motion.article
           layoutId={`skill-proficiency-container-${name}`}
           className={'skill-proficiency-container'}
-          // transition={{ duration: 2 }}
         >
           <h4>I am</h4>
           <motion.p

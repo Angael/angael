@@ -129,7 +129,7 @@ export const skillArr = [
     proficiency: PROFICIENCY.beginner,
   },
   {
-    icon: '/img/php.svg',
+    icon: '/img/php.png',
     name: 'PHP',
     longDesc: [
       `My first server side language`,
@@ -194,6 +194,11 @@ export const skillArr = [
     name: 'React Router',
     longDesc: ['Routing solution for almost every project I do'],
     proficiency: PROFICIENCY.advanced,
+    iconStyle: {
+      background: 'rgb(37, 37, 37)',
+      borderRadius: '50%',
+      boxShadow: 'rgb(0 0 0 / 35%) 2px 11.5px 26px -10px',
+    },
   },
   {
     icon: '/img/hookstate.png',
