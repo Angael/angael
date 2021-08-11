@@ -20,6 +20,7 @@ const Index = () => (
     </Head>
     <TitleCard />
     <Skills />
+    <div className='my-projects'>TODO: List of Projects I made</div>
   </>
 );
 

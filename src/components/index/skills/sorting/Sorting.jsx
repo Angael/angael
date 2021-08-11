@@ -29,20 +29,6 @@ function Sorting({ filter, setFilter, prof, setProf }) {
     setProf(e.target.value);
   };
 
-  const proficiencies = _proficiencies.map((v, i) =>
-    i + 1 >= prof ? (
-      <motion.span
-        {...motionProps}
-        key={v.word}
-        className={v.word}
-        layoutId={v.word}
-      >
-        {v.word}
-        {i !== _proficiencies.length - 1 && ','}
-      </motion.span>
-    ) : null
-  );
-
   return (
     <nav className={'sorting-wrapper'}>
       <div className='filter'>
@@ -64,11 +50,9 @@ function Sorting({ filter, setFilter, prof, setProf }) {
           max='4'
         />
         <label htmlFor='proficiency-slider'>
-          <AnimateSharedLayout type='crossfade'>
-            <motion.div className={'prof-list'}>
-              <AnimatePresence>{proficiencies}</AnimatePresence>
-            </motion.div>
-          </AnimateSharedLayout>
+          <div className={'prof-display'}>
+            <div className={proficiency.word}>{proficiency.word}+</div>
+          </div>
         </label>
       </div>
     </nav>
